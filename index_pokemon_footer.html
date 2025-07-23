@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VNCards – Pokémon Karten</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { margin: 0; font-family: "Segoe UI", sans-serif; background: #f2f2f2; color: #222; text-align: center; }
+    header { padding: 40px 20px 20px; }
+    header img { max-width: 220px; height: auto; }
+    h1 { font-size: 1.4rem; margin: 10px 0 30px; }
+    .buttons { display: flex; flex-direction: column; align-items: center; gap: 15px; max-width: 400px; margin: 0 auto; }
+    .button { width: 100%; padding: 14px 20px; font-size: 1.1rem; border: none; border-radius: 8px;
+              display: flex; align-items: center; justify-content: center; text-decoration: none; color: white;
+              background-color: #2a75bb; transition: background-color 0.3s ease; }
+    .button:hover { background-color: #1a4e85; }
+    .button i { margin-right: 10px; color: #ffcb05; }
+    .button.disabled { background-color: #aaa; cursor: default; pointer-events: none; }
+    footer { margin-top: 40px; background: #2a75bb; color: white; padding: 20px 10px; }
+    footer .links a { color: #ffcb05; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    footer .links a:hover { text-decoration: underline; }
+    footer .social { margin-top: 10px; }
+    footer .social a { color: #ffcb05; margin: 0 8px; font-size: 1.4rem; transition: transform 0.3s ease; }
+    footer .social a:hover { transform: scale(1.2); }
+    footer .qr { margin-top: 15px; }
+    footer .qr img { width: 80px; height: 80px; border: 3px solid #ffcb05; border-radius: 10px; }
+    footer p { margin-top: 10px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Logo_VNCards.png" alt="VNCards Logo" />
+    <h1>Willkommen bei VNCards – Deine Quelle für Pokémon-Sammelkarten</h1>
+  </header>
+
+  <section class="buttons">
+    <a class="button" href="https://www.cardmarket.com/de/Pokemon/Users/VNCards" target="_blank">
+      <i class="fas fa-shopping-cart"></i> Cardmarket besuchen
+    </a>
+    <a class="button disabled" href="#"><i class="fab fa-facebook"></i> Facebook – bald verfügbar</a>
+    <a class="button disabled" href="#"><i class="fab fa-whatsapp"></i> WhatsApp – bald verfügbar</a>
+    <a class="button disabled" href="#"><i class="fab fa-instagram"></i> Instagram – bald verfügbar</a>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="qr">
+      <img src="qr_vncards.png" alt="QR-Code zur Seite" />
+    </div>
+    <p>© 2025 VNCards</p>
+  </footer>
+</body>
+</html>
